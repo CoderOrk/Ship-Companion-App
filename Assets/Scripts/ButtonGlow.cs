@@ -12,6 +12,11 @@ public class ButtonGlow : MonoBehaviour
 
     bool isGlowing;
 
+    // void Start()
+    // {
+    //     glowText.fontMaterial
+    // }
+
     void Update()
     {
 
@@ -20,15 +25,15 @@ public class ButtonGlow : MonoBehaviour
             isGlowing = true;
         }
 
-        if(glowPower < 0.120 && isGlowing)
+        if(glowPower < 0.2 && isGlowing)
         {
             glowPower += .001f;
-            glowText.fontSharedMaterial.SetFloat(ShaderUtilities.ID_GlowPower, glowPower);
+            glowText.fontMaterial.SetFloat(ShaderUtilities.ID_GlowPower, glowPower);
         }else 
         {
             isGlowing = false;
             glowPower -= 0.001f;
-            glowText.fontSharedMaterial.SetFloat(ShaderUtilities.ID_GlowPower, glowPower);
+            glowText.fontMaterial.SetFloat(ShaderUtilities.ID_GlowPower, glowPower);
         }
         
     }

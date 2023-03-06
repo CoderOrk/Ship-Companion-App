@@ -56,7 +56,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Dune_Rise SDF Material
   m_Shader: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - GLOW_ON
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -105,8 +106,8 @@ Material:
     - _FaceUVSpeedY: 0
     - _GlowInner: 1
     - _GlowOffset: 0
-    - _GlowOuter: 0.698
-    - _GlowPower: 0.013999999
+    - _GlowOuter: 0.7
+    - _GlowPower: 0
     - _GradientScale: 6
     - _LightAngle: 3.1416
     - _MaskSoftnessX: 0
