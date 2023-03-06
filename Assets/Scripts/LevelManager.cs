@@ -49,4 +49,10 @@ public class LevelManager : MonoBehaviour
     {
         SceneManager.LoadScene(sceneIndex);
     }
+
+    public void Quit()
+    {
+        Debug.Log("Quit!");
+        Application.Quit();
+    }
 }
