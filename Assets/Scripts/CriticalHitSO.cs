@@ -9,7 +9,7 @@ public class CriticalHitSO : ScriptableObject
     [TextArea(2, 4)]
     [SerializeField] string description = "Description of Critical Hit";
 
-    public int amountHit;
+    [SerializeField] int amountHit;
 
 
     public string getTitle()
@@ -31,5 +31,7 @@ public class CriticalHitSO : ScriptableObject
     {
         return amountHit;
     }
+
+    private void OnEnable() => hideFlags = HideFlags.DontUnloadUnusedAsset;
 
 }

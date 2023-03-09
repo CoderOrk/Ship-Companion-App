@@ -36,8 +36,15 @@ public class CritPicker : MonoBehaviour
 
     void printCriticalHitDescription()
     {
-        description.text = randomCriticalHit.getDescription() + "<br>" +
-                            "Amount Hit: " + randomCriticalHit.getAmountHit();
+        if(randomCriticalHit.getAmountHit() >= 2)
+        {
+            description.text = "You've been Critically Hit 2 times in the same location" + "<br>" +
+                                "Your ship is lost!";
+        }else
+        {
+            description.text = randomCriticalHit.getDescription() + "<br>" +
+                                "Amount Hit: " + randomCriticalHit.getAmountHit();
+        }
     }
 
     
