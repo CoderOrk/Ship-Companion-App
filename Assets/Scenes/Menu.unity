@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1393116396}
     m_Modifications:
+    - target: {fileID: 4193502526135935784, guid: 6e1490ddbf96f0a4b984affd0323aa7c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4193502526135935789, guid: 6e1490ddbf96f0a4b984affd0323aa7c, type: 3}
       propertyPath: m_Name
       value: BattleButton
@@ -376,6 +380,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1393116396}
     m_Modifications:
+    - target: {fileID: 4193502526135935784, guid: 6e1490ddbf96f0a4b984affd0323aa7c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4193502526135935789, guid: 6e1490ddbf96f0a4b984affd0323aa7c, type: 3}
       propertyPath: m_Name
       value: CriticalHitButton
@@ -606,6 +614,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1640035319}
     m_Modifications:
+    - target: {fileID: 4193502526135935784, guid: 6e1490ddbf96f0a4b984affd0323aa7c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4193502526135935789, guid: 6e1490ddbf96f0a4b984affd0323aa7c, type: 3}
       propertyPath: m_Name
       value: OpsButton
@@ -768,6 +780,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1393116396}
     m_Modifications:
+    - target: {fileID: 4193502526135935784, guid: 6e1490ddbf96f0a4b984affd0323aa7c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4193502526135935789, guid: 6e1490ddbf96f0a4b984affd0323aa7c, type: 3}
       propertyPath: m_Name
       value: TraverseButton
@@ -1233,6 +1249,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1393116396}
     m_Modifications:
+    - target: {fileID: 4193502526135935784, guid: 6e1490ddbf96f0a4b984affd0323aa7c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4193502526135935789, guid: 6e1490ddbf96f0a4b984affd0323aa7c, type: 3}
       propertyPath: m_Name
       value: SpaceStationButton
@@ -1460,6 +1480,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1393116396}
     m_Modifications:
+    - target: {fileID: 4193502526135935784, guid: 6e1490ddbf96f0a4b984affd0323aa7c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4193502526135935789, guid: 6e1490ddbf96f0a4b984affd0323aa7c, type: 3}
       propertyPath: m_Name
       value: DestructionButton
@@ -1654,6 +1678,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1640035319}
     m_Modifications:
+    - target: {fileID: 4193502526135935784, guid: 6e1490ddbf96f0a4b984affd0323aa7c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4193502526135935789, guid: 6e1490ddbf96f0a4b984affd0323aa7c, type: 3}
       propertyPath: m_Name
       value: BackButton
