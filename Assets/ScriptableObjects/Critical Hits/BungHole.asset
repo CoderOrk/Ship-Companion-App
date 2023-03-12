@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Bunghole
   description: Your Bunghole Has been critically hit! <br> This just isn't good.
-  amountHit: 2
+  amountHit: 0

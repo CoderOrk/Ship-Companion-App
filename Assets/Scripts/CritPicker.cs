@@ -38,7 +38,7 @@ public class CritPicker : MonoBehaviour
     {
         if(randomCriticalHit.getAmountHit() >= 2)
         {
-            description.text = "You've been Critically Hit 2 times in the same location" + "<br>" +
+            description.text = "You've been Critically Hit 2 times in the same location!" + "<br>" +
                                 "Your ship is lost!";
         }else
         {

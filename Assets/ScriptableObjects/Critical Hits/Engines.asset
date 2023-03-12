@@ -15,4 +15,4 @@ MonoBehaviour:
   title: Engines
   description: Engines have been critically hit! <br> Your manuvering capabilities
     are reeuced to half!
-  amountHit: 1
+  amountHit: 0

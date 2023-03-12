@@ -15,4 +15,4 @@ MonoBehaviour:
   title: MedBay
   description: Med Bay has been critically hit! <br> Your ability to heal your crew
     is at half efficiency!
-  amountHit: 1
+  amountHit: 0
