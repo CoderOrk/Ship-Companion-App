@@ -574,21 +574,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6328030888713623733, guid: 071e1c35f7370134a958cced3579ff34, type: 3}
+      propertyPath: battleMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: 5c61b356d66311547a28b1a803ecb968, type: 3}
+    - target: {fileID: 6328030888713623733, guid: 071e1c35f7370134a958cced3579ff34, type: 3}
+      propertyPath: defaultMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: 0e53c1d0617c7f04d92a30337a6def28, type: 3}
     - target: {fileID: 8395327544531202505, guid: 071e1c35f7370134a958cced3579ff34, type: 3}
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8395327544531202505, guid: 071e1c35f7370134a958cced3579ff34, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 218.83792
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8395327544531202505, guid: 071e1c35f7370134a958cced3579ff34, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 224.90585
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8395327544531202505, guid: 071e1c35f7370134a958cced3579ff34, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.312844
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 8395327544531202505, guid: 071e1c35f7370134a958cced3579ff34, type: 3}
       propertyPath: m_LocalRotation.w

@@ -410,6 +410,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: baa6e9837a5e25045bcfe0c9f47ac985, type: 2}
   title: {fileID: 2129493434}
   description: {fileID: 1309878004}
+  audioPlayer: {fileID: 1388028154}
 --- !u!114 &1149739897 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 160891603711232111, guid: 05fa989c60bc0c84d9f6d59e84f4b92d, type: 3}
@@ -633,15 +634,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8395327544531202505, guid: 071e1c35f7370134a958cced3579ff34, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 218.83792
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8395327544531202505, guid: 071e1c35f7370134a958cced3579ff34, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 224.90585
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8395327544531202505, guid: 071e1c35f7370134a958cced3579ff34, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.312844
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 8395327544531202505, guid: 071e1c35f7370134a958cced3579ff34, type: 3}
       propertyPath: m_LocalRotation.w
@@ -677,6 +678,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 071e1c35f7370134a958cced3579ff34, type: 3}
+--- !u!114 &1388028154 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6328030888713623733, guid: 071e1c35f7370134a958cced3579ff34, type: 3}
+  m_PrefabInstance: {fileID: 1388028153}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c636681e743544428c6322da5beeef9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1634327091
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -841,7 +853,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1827032036}
   - component: {fileID: 1827032035}
-  - component: {fileID: 1827032034}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -849,14 +860,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1827032034
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1827032033}
-  m_Enabled: 1
 --- !u!20 &1827032035
 Camera:
   m_ObjectHideFlags: 0

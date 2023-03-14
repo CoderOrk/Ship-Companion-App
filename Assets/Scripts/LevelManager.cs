@@ -1,10 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
+    [SerializeField] TextMeshProUGUI buttonText;
+    [SerializeField] AudioPlayer audioPlayer;
+    [SerializeField] AudioSource audioSource;
+
+   public static bool isInBattle = false;
+
+   void Start() 
+   {
+        if(isInBattle && buttonText != null)
+        {
+            buttonText.text = "End Battle";
+        }
+   }
+
     public void LoadStart()
     {
         LoadScene(0);
@@ -12,6 +27,7 @@ public class LevelManager : MonoBehaviour
 
     public void LoadMenu()
     {
+        audioPlayer.PlayStartSFX();
         LoadScene(1);
     }
 
@@ -42,7 +58,17 @@ public class LevelManager : MonoBehaviour
 
         public void LoadBattle()
     {
-        LoadScene(7);
+        if(!isInBattle)
+        {
+            isInBattle = true;
+            buttonText.text = "End Battle";
+            audioPlayer.PlayBattleMusic();
+        }else
+        {
+            isInBattle = false;
+            buttonText.text = "Battle";
+            audioPlayer.PlayDefaultMusic();
+        }
     }
 
     void LoadScene(int sceneIndex)

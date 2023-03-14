@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: LifeSupport
   m_EditorClassIdentifier: 
   title: Life Support
-  description: Ife Support has been critically hit! <br> Your crew is loosing oxygen
+  description: Life Support has been critically hit! <br> Your crew is loosing oxygen
     and the toilets are really backed up!
-  amountHit: 0
+  amountHit: 1

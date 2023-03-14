@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8395327544531202505}
   - component: {fileID: 8395327544531202504}
   - component: {fileID: 6328030888713623733}
+  - component: {fileID: 7055383178181237501}
   m_Layer: 0
   m_Name: AudioPlayer
   m_TagString: Untagged
@@ -45,7 +46,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 0e53c1d0617c7f04d92a30337a6def28, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -141,3 +142,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c636681e743544428c6322da5beeef9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultMusic: {fileID: 8300000, guid: 0e53c1d0617c7f04d92a30337a6def28, type: 3}
+  battleMusic: {fileID: 8300000, guid: 5c61b356d66311547a28b1a803ecb968, type: 3}
+  startSFX: {fileID: 8300000, guid: f5912a3feb1015243a55175af1dab144, type: 3}
+  startSFXVolume: 1
+  explosionSFX: {fileID: 8300000, guid: 6ba7b9146d91bf14aa45519581cce2d1, type: 3}
+  explosionSFXVolume: 1
+  engineRampUpSFX: {fileID: 8300000, guid: 8bfe8802abbacdf4f98c5723687b23e9, type: 3}
+  engineRampUpSFXVolume: 1
+  clickSFX: {fileID: 8300000, guid: aa7bd57c69100e04a92ebb3ad36ddda9, type: 3}
+  clickSFXVolume: 1
+  audioSource: {fileID: 8395327544531202504}
+--- !u!81 &7055383178181237501
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8395327544531202507}
+  m_Enabled: 1

@@ -11,10 +11,12 @@ public class CritPicker : MonoBehaviour
 
     [SerializeField] TextMeshProUGUI title;
     [SerializeField] TextMeshProUGUI description;
+    [SerializeField] AudioPlayer audioPlayer;
     int amountHit;
 
     void Start() 
     {
+        audioPlayer.PlayExplosionSFX();
         getRandomCriticalHit();
         printCriticalHitTitle();
         printCriticalHitDescription();    
