@@ -5,9 +5,9 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Critical Hit", fileName = "New Critical Hit")]
 public class CriticalHitSO : ScriptableObject
 {
-    [SerializeField] string title = "Critical Hit Title";
+    [SerializeField] string title = "Critical Hit Title Here";
     [TextArea(2, 4)]
-    [SerializeField] string description = "Description of Critical Hit";
+    [SerializeField] string description = "Critical Hit Description Here";
 
     [SerializeField] int amountHit;
 
