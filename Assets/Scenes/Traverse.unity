@@ -297,7 +297,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 293907773}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -935,6 +935,7 @@ MonoBehaviour:
   description: {fileID: 470819881}
   audioPlayer: {fileID: 496813740}
   image: {fileID: 293907775}
+  allsWell: {fileID: 11400000, guid: 209e83b81448803408ce126601a55b12, type: 2}
 --- !u!4 &528455677
 Transform:
   m_ObjectHideFlags: 0
