@@ -931,6 +931,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   traverseList:
   - {fileID: 11400000, guid: 82b6be854bba9c74eb09b778f199f896, type: 2}
+  - {fileID: 11400000, guid: 99ebd36c52df27148b6f229ceee9dbfe, type: 2}
   title: {fileID: 490249052}
   description: {fileID: 470819881}
   audioPlayer: {fileID: 496813740}

@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 32
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: AllsWell
   m_EditorClassIdentifier: 
   titleText: Alls Well
-  descriptionText: As you move through space, nothing stands out.
+  descriptionText: As you move through space, All's Well.
+  repeats: 1
   actionImage: {fileID: 0}

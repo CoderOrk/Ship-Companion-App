@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 32
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   titleText: Beautiful Gaseous Cloud
   descriptionText: "Add your ship\u2019s maneuverability to your shields. Roll a
-    D10. A success will be a result equal to or below this number. While a roll result
-    above will result in a failure. Success: No damage taken. Failure: You take critical
-    damage to your shields."
+    D10 equal to or below this number. \n<b>Success:</b> No damage taken \n<b>Failure:</b>
+    You take critical damage to your shields."
+  repeats: 1
   actionImage: {fileID: 21300000, guid: 05828fe905da59e4cbc508aef97586a7, type: 3}

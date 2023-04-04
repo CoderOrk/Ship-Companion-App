@@ -8,7 +8,7 @@ public class TraversePicker : MonoBehaviour
 {
     [SerializeField] List<TraverseSO> traverseList = new List<TraverseSO>();
 
-    TraverseSO randomTraverseAction;
+    TraverseSO randomTraverseAction = null;
 
     [SerializeField] TextMeshProUGUI title;
     [SerializeField] TextMeshProUGUI description;
@@ -39,10 +39,25 @@ public class TraversePicker : MonoBehaviour
             randomTraverseAction = allsWell;
         }else
         {
-            int randomIndex = Random.Range(0, traverseList.Count);
-            randomTraverseAction = traverseList[randomIndex]; 
+            while(randomTraverseAction == null)
+            {
+                int randomIndex = Random.Range(0, traverseList.Count);
+                if(traverseList[randomIndex].GetDrawn() == true && traverseList[randomIndex].GetRepeats() == false)
+                {
+                    Debug.Log("Drawn: " + traverseList[randomIndex].GetDrawn().ToString());
+                    Debug.Log("Repeats: " + traverseList[randomIndex].GetRepeats().ToString());
+                    Debug.Log("Skipped");
+                    //break;
+                }else
+                {
+                    Debug.Log("Drawn: " + traverseList[randomIndex].GetDrawn().ToString());
+                    Debug.Log("Repeats: " + traverseList[randomIndex].GetRepeats().ToString());
+                    Debug.Log("Drawn");
+                    traverseList[randomIndex].SetDrawn(true);
+                    randomTraverseAction = traverseList[randomIndex];
+                }
+            }
         }
-
     }
 
     void displayTravereAction()
@@ -55,8 +70,8 @@ public class TraversePicker : MonoBehaviour
             return;                
         }else
         {
-            image.enabled = true;                
             image.sprite = randomTraverseAction.getImage();
+            image.enabled = true;                
         }
 
     }
