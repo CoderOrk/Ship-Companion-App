@@ -12,41 +12,36 @@ public class CritPicker : MonoBehaviour
     [SerializeField] TextMeshProUGUI title;
     [SerializeField] TextMeshProUGUI description;
     [SerializeField] AudioPlayer audioPlayer;
-    int amountHit;
 
     void Start() 
     {
         audioPlayer.PlayExplosionSFX();
-        getRandomCriticalHit();
-        printCriticalHitTitle();
-        printCriticalHitDescription();    
+        GetRandomCriticalHit();
+        PrintCriticalHit();
     }
 
-    void getRandomCriticalHit()
+    void GetRandomCriticalHit()
     {
         int randomIndex = Random.Range(0, criticalList.Count);
 
-        criticalList[randomIndex].incrementAmountHit();
         randomCriticalHit = criticalList[randomIndex];
     }
 
 
-    void printCriticalHitTitle()
+    void PrintCriticalHitTitle()
     {
         title.text = randomCriticalHit.getTitle();
     }
 
-    void printCriticalHitDescription()
+    void PrintCriticalHitDescription()
     {
-        if(randomCriticalHit.getAmountHit() >= 2)
-        {
-            description.text = "You've been Critically Hit 2 times in the same location!" + "<br>" +
-                                "Your ship is lost!";
-        }else
-        {
-            description.text = randomCriticalHit.getDescription() + "<br>" +
-                                "Amount Hit: " + randomCriticalHit.getAmountHit();
-        }
+            description.text = randomCriticalHit.getDescription();
+    }
+
+    void PrintCriticalHit()
+    {
+        PrintCriticalHitTitle();
+        PrintCriticalHitDescription();
     }
 
     

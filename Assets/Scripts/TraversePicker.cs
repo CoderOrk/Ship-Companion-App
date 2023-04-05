@@ -10,11 +10,15 @@ public class TraversePicker : MonoBehaviour
 
     TraverseSO randomTraverseAction = null;
 
+    [Header("Layout")]
     [SerializeField] TextMeshProUGUI title;
     [SerializeField] TextMeshProUGUI description;
     [SerializeField] AudioPlayer audioPlayer;
     [SerializeField] Image image;
+
+    [Header("Alls Well")]
     [SerializeField] TraverseSO allsWell;
+    [SerializeField] int allWellPencentage = 85;
 
     int randomNum;
 
@@ -34,7 +38,7 @@ public class TraversePicker : MonoBehaviour
         randomNum = Random.Range(1, 101);
         Debug.Log(randomNum.ToString());
 
-        if(randomNum <= 80)
+        if(randomNum <= allWellPencentage)
         {
             randomTraverseAction = allsWell;
         }else

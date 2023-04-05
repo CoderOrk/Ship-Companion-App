@@ -12,11 +12,6 @@ public class ButtonGlow : MonoBehaviour
 
     bool isGlowing;
 
-    // void Start()
-    // {
-    //     glowText.fontMaterial
-    // }
-
     void Update()
     {
 
