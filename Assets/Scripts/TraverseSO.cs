@@ -10,39 +10,39 @@ public class TraverseSO : ScriptableObject
     [SerializeField] string titleText = "Traverse Title Text Here";
     [TextArea(2, 6)]
     [SerializeField] string descriptionText = "Traverse Description Text Here";
-    [SerializeField] bool repeats;
+    [SerializeField] bool doesRepeat;
     [SerializeField] Sprite actionImage;
 
-    bool drawn = false;
+    bool wasDrawn = false;
 
-    public string getTitle()
+    public string GetTitle()
     {
         return titleText;
     }
 
-    public string getDescription()
+    public string GetDescription()
     {
         return descriptionText;
     }
 
-    public bool GetRepeats()
+    public bool GetDoesRepeat()
     {
-        return repeats;
+        return doesRepeat;
     }
 
-    public Sprite getImage()
+    public Sprite GetImage()
     {
         return actionImage;
     }
 
-    public void SetDrawn(bool wasDrawn)
+    public void SetWasDrawn(bool drawn)
     {
-        drawn = wasDrawn;
+        wasDrawn = drawn;
     }
 
-    public bool GetDrawn()
+    public bool GetWasDrawn()
     {
-        return drawn;
+        return wasDrawn;
     }
 
     private void OnEnable() => hideFlags = HideFlags.DontUnloadUnusedAsset;

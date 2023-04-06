@@ -10,11 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67964d7fdd2627c4fb941e064aac31ca, type: 3}
-  m_Name: Graveyard
+  m_Name: DeadShip 0
   m_EditorClassIdentifier: 
-  titleText: Graveyard
-  descriptionText: "You may choose to skip this ship\u2019s following activation
-    in order to search for parts of value amongst the fallen vessels. If so, gain
-    1D3 in leverage tokens at the end of the skipped activation."
+  titleText: Dead Ship
+  descriptionText: You come across the carcass of a ship that is mostly still intact.
+    Do you choose to investigate the ship by sending a boarding crew?
   doesRepeat: 1
-  actionImage: {fileID: 21300000, guid: 444d1339ea774174eafe8aa80afcfdd9, type: 3}
+  actionImage: {fileID: 21300000, guid: 736101efc70acf94f8c218915bd9d617, type: 3}

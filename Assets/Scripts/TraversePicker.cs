@@ -6,9 +6,6 @@ using UnityEngine.UI;
 
 public class TraversePicker : MonoBehaviour
 {
-    [SerializeField] List<TraverseSO> traverseList = new List<TraverseSO>();
-
-    TraverseSO randomTraverseAction = null;
 
     [Header("Layout")]
     [SerializeField] TextMeshProUGUI title;
@@ -17,64 +14,70 @@ public class TraversePicker : MonoBehaviour
     [SerializeField] Image image;
 
     [Header("Alls Well")]
-    [SerializeField] TraverseSO allsWell;
-    [SerializeField] int allWellPencentage = 85;
+    [SerializeField] TraverseEventSO allsWell;
+    [SerializeField] int allsWellPencentage = 85;
 
-    int randomNum;
+    [Header("Traverse Events")]
+    [SerializeField] List<TraverseEventSO> traverseEventList = new List<TraverseEventSO>();
+    
+    TraverseEventSO randomTraverseEvent = null;
 
-    void Awake()
-    {
+    TraverseSO traverseAction = null;
 
-    }
 
     void Start()
     {
-        getTraverseAction();
-        displayTravereAction();
+        getTraverseEvent();
+        displayTraverseAction();
     }
 
-    void getTraverseAction()
+    void getTraverseEvent()
     {
+        int randomNum;
         randomNum = Random.Range(1, 101);
         Debug.Log(randomNum.ToString());
 
-        if(randomNum <= allWellPencentage)
+        if(randomNum <= allsWellPencentage)
         {
-            randomTraverseAction = allsWell;
+            randomTraverseEvent = allsWell;
+            traverseAction = randomTraverseEvent.GetFirstAction();
         }else
         {
-            while(randomTraverseAction == null)
+            while(randomTraverseEvent == null)
             {
-                int randomIndex = Random.Range(0, traverseList.Count);
-                if(traverseList[randomIndex].GetDrawn() == true && traverseList[randomIndex].GetRepeats() == false)
+                int randomIndex = Random.Range(0, traverseEventList.Count);
+                if(traverseEventList[randomIndex].GetFirstAction().GetWasDrawn() == true && 
+                    traverseEventList[randomIndex].GetFirstAction().GetDoesRepeat() == false)
                 {
-                    Debug.Log("Drawn: " + traverseList[randomIndex].GetDrawn().ToString());
-                    Debug.Log("Repeats: " + traverseList[randomIndex].GetRepeats().ToString());
-                    Debug.Log("Skipped");
-                    //break;
+                    Debug.Log("Drawn: " + traverseEventList[randomIndex].GetFirstAction().GetWasDrawn().ToString());
+                    Debug.Log("Repeats: " + traverseEventList[randomIndex].GetFirstAction().GetDoesRepeat().ToString());
+                    Debug.Log(traverseEventList[randomIndex].GetFirstAction().GetTitle() + " Skipped");
+
+                    break;
                 }else
                 {
-                    Debug.Log("Drawn: " + traverseList[randomIndex].GetDrawn().ToString());
-                    Debug.Log("Repeats: " + traverseList[randomIndex].GetRepeats().ToString());
-                    Debug.Log("Drawn");
-                    traverseList[randomIndex].SetDrawn(true);
-                    randomTraverseAction = traverseList[randomIndex];
+                    Debug.Log("Drawn: " + traverseEventList[randomIndex].GetFirstAction().GetWasDrawn().ToString());
+                    Debug.Log("Repeats: " + traverseEventList[randomIndex].GetFirstAction().GetDoesRepeat().ToString());
+                    Debug.Log(traverseEventList[randomIndex].GetFirstAction().GetTitle() + " Drawn");
+
+                    traverseEventList[randomIndex].GetFirstAction().SetWasDrawn(true);
+                    randomTraverseEvent = traverseEventList[randomIndex];
                 }
             }
         }
     }
 
-    void displayTravereAction()
+    void displayTraverseAction()
     {
-        title.text = randomTraverseAction.getTitle();
-        description.text = randomTraverseAction.getDescription();
+        title.text = randomTraverseEvent.GetFirstAction().GetTitle();
+        description.text = randomTraverseEvent.GetFirstAction().GetDescription();
 
-        if(randomTraverseAction == allsWell)
+        if(randomTraverseEvent == allsWell)
         {
             return;                
         }else
         {
-            image.sprite = randomTraverseAction.getImage();
+            image.sprite = randomTraverseEvent.GetFirstAction().GetImage();
             image.enabled = true;                
         }
 

@@ -929,14 +929,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d1eff2cea4f2f541b4ce4b234d66426, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  traverseList:
-  - {fileID: 11400000, guid: 82b6be854bba9c74eb09b778f199f896, type: 2}
-  - {fileID: 11400000, guid: 99ebd36c52df27148b6f229ceee9dbfe, type: 2}
   title: {fileID: 490249052}
   description: {fileID: 470819881}
   audioPlayer: {fileID: 496813740}
   image: {fileID: 293907775}
-  allsWell: {fileID: 11400000, guid: 209e83b81448803408ce126601a55b12, type: 2}
+  allsWell: {fileID: 11400000, guid: 57130da67121269458c31e21dd71c7d7, type: 2}
+  allsWellPencentage: 85
+  traverseEventList:
+  - {fileID: 11400000, guid: 264e7cc4ac55dfd48b2bd14656025b0d, type: 2}
+  - {fileID: 11400000, guid: fcbbb62dd8917cf4e8de5456e34ee7bb, type: 2}
+  - {fileID: 11400000, guid: 5d8055895a18a67439f5274fa82ab5d4, type: 2}
 --- !u!4 &528455677
 Transform:
   m_ObjectHideFlags: 0
