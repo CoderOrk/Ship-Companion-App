@@ -6,15 +6,11 @@ using UnityEngine;
 
 public class TraverseSO : ScriptableObject
 {
-
+    [Header("Action Layout")]
     [SerializeField] string titleText = "Traverse Title Text Here";
     [TextArea(2, 6)]
     [SerializeField] string descriptionText = "Traverse Description Text Here";
-    [SerializeField] bool ActionRepeats = true;
-
     [SerializeField] Sprite actionImage;
-
-    bool wasDrawn = false;
 
     public string GetTitle()
     {
@@ -26,26 +22,8 @@ public class TraverseSO : ScriptableObject
         return descriptionText;
     }
 
-    public bool GetActionRepeats()
-    {
-        return ActionRepeats;
-    }
-
     public Sprite GetImage()
     {
         return actionImage;
     }
-
-    public void SetWasDrawn(bool drawn)
-    {
-        wasDrawn = drawn;
-    }
-
-    public bool GetWasDrawn()
-    {
-        return wasDrawn;
-    }
-
-    private void OnEnable() => hideFlags = HideFlags.DontUnloadUnusedAsset;
-
 }

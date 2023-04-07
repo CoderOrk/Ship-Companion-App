@@ -248,7 +248,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4193502526135935791, guid: 6e1490ddbf96f0a4b984affd0323aa7c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadBattle
+      value: ToggleBattle
       objectReference: {fileID: 0}
     - target: {fileID: 4193502526135935791, guid: 6e1490ddbf96f0a4b984affd0323aa7c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName

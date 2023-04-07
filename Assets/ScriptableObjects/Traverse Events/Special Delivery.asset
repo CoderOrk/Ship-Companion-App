@@ -16,7 +16,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 41cbc9519ef51e5469dfc4299edac74c, type: 2}
   hasLimitedRepeats: 0
   numOfRepeats: 0
+  timesDrawn: 0
   hasEventSpacing: 1
   eventSpacing: 6
+  isKraken: 0
+  isSpecDelivery: 1
   canIgnore: 0
   canInvestigate: 0
+  randomizeFirstAction: 0

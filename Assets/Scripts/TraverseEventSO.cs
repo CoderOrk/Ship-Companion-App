@@ -6,20 +6,28 @@ using UnityEngine;
 
 public class TraverseEventSO : ScriptableObject
 {
-    [Header("Traverse Event")]
+    [Header("Events Actions")]
     [SerializeField] List<TraverseSO> traverseActionsList = new List<TraverseSO>();
 
-    [Header("Repeat Settings")]
+    [Header("Event Repeat Settings")]
     [SerializeField] bool hasLimitedRepeats = false;
     [SerializeField] int numOfRepeats;
+    [SerializeField] int timesDrawn = 0;
     [SerializeField] bool hasEventSpacing = false;
     [SerializeField] int eventSpacing;
+    [SerializeField] bool isKraken = false;
+    [SerializeField] bool isSpecDelivery = false;
 
-    [Header("Layer Settings")]
+    [Header("Event Layer Settings")]
     [SerializeField] bool canIgnore = false;
     [SerializeField] bool canInvestigate = false;
-    [SerializeField] bool hasMultipleLayers;
+    [SerializeField] bool randomizeFirstAction = false;
 
+    public int GetActionListLength()
+    {
+        return traverseActionsList.Count;
+    }
+    
     public bool HasLimitedRepeats()
     {
         return hasLimitedRepeats;
@@ -30,6 +38,21 @@ public class TraverseEventSO : ScriptableObject
         return numOfRepeats;
     }
 
+    public void DecrementTimesDrawn()
+    {
+        timesDrawn--;
+    }
+    
+    public void IncrementTimesDrawn()
+    {
+        timesDrawn++;
+    }
+
+    public int GetTimesDrawn()
+    {
+        return timesDrawn;
+    }    
+    
     public bool HasEventSpacing()
     {
         return hasEventSpacing;
@@ -38,6 +61,16 @@ public class TraverseEventSO : ScriptableObject
     public int GetEventSpacing()
     {
         return eventSpacing;
+    }
+
+    public bool IsKraken()
+    {
+        return isKraken;
+    }
+
+    public bool IsSpecDelivery()
+    {
+        return isSpecDelivery;
     }
 
     public bool CanIgnore()
@@ -50,9 +83,9 @@ public class TraverseEventSO : ScriptableObject
         return canInvestigate;
     }
 
-    public bool HasMultipleLayers()
+    public bool RandomizeFirstAction()
     {
-        return hasMultipleLayers;
+        return randomizeFirstAction;
     }
 
     public TraverseSO GetFirstAction()
@@ -62,6 +95,12 @@ public class TraverseEventSO : ScriptableObject
 
     public TraverseSO GetTraverseAction(int index)
     {
-        return traverseActionsList[index];
+            return traverseActionsList[index];
     }
+
+    // private void OnEnable()
+    // {
+    //     hideFlags = HideFlags.DontUnloadUnusedAsset;
+    // }
+
 }

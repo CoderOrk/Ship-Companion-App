@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 32
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -16,3 +16,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: eb65bc5c29db35948aaf103057b8dce1, type: 2}
   hasLimitedRepeats: 1
   numOfRepeats: 2
+  timesDrawn: 0
+  hasEventSpacing: 0
+  eventSpacing: 0
+  isKraken: 0
+  isSpecDelivery: 0
+  canIgnore: 0
+  canInvestigate: 0
+  randomizeFirstAction: 0

@@ -13,8 +13,15 @@ MonoBehaviour:
   m_Name: GhostShip
   m_EditorClassIdentifier: 
   traverseActionsList:
+  - {fileID: 11400000, guid: fc64a3948a4bef14b991d91990e50c0f, type: 2}
   - {fileID: 11400000, guid: 334a4b5b1b29116489431371830ea7e1, type: 2}
   - {fileID: 11400000, guid: 5b35f2c071a2a3f4ca51a8cb54979359, type: 2}
   - {fileID: 11400000, guid: 3ebaeb7a0e050484e8b1f96e656af11d, type: 2}
   hasLimitedRepeats: 0
   numOfRepeats: 0
+  timesDrawn: 0
+  hasEventSpacing: 0
+  eventSpacing: 0
+  canIgnore: 0
+  canInvestigate: 0
+  randomizeFirstAction: 1

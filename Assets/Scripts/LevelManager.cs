@@ -10,6 +10,10 @@ public class LevelManager : MonoBehaviour
     [SerializeField] AudioPlayer audioPlayer;
     [SerializeField] AudioSource audioSource;
 
+    public static int eventsSinceKraken = 6;
+    public static int eventsSinceSpecDelivery = 6;
+    public static int traverseMercShips = 2;
+    public static int spaceStationMercShips = 1;
    public static bool isInBattle = false;
 
    void Start() 
@@ -19,6 +23,65 @@ public class LevelManager : MonoBehaviour
             buttonText.text = "End Battle";
         }
    }
+
+   public int GetEventsSinceKraken()
+   {
+        return eventsSinceKraken;
+   }
+
+   public void IncrementEventsSinceKraken()
+    {
+        eventsSinceKraken++;
+    }
+
+    public void ResetEventsSinceKraken()
+    {
+        eventsSinceKraken = 0;
+    }
+
+    public int GetEventsSinceSpecDelivery()
+    {
+        return eventsSinceSpecDelivery;
+    }
+
+    public void IncrementEventsSinceSpecDelivery()
+    {
+        eventsSinceSpecDelivery++;
+    }
+
+    public void ResetEventsSinceSpecDelivery()
+    {
+        eventsSinceSpecDelivery = 0;
+    }
+
+    public int GetTraverseMercShips()
+    {
+        return traverseMercShips;
+    }
+
+    public void DecrementTraverseMercShips()
+    {
+        traverseMercShips--;
+    }
+
+    public int GetSpaceStationMercShips()
+    {
+        return spaceStationMercShips;
+    }
+
+    public void DecrementSpaceStationMercShips()
+    {
+        spaceStationMercShips--;
+    }
+
+    public void PrintResources()
+    {
+        Debug.Log("<b>Resources</b>" + "\n" +
+        "Events Since Kraken: " + GetEventsSinceKraken().ToString() + "\n" +
+        "Events Since Special Delivery: " + GetEventsSinceSpecDelivery().ToString() + "\n" +
+        "Traverse Merc Ships Remaining: " + GetTraverseMercShips().ToString() + "\n" +
+        "Space Station Merc Ships Remaining: " + GetSpaceStationMercShips().ToString());
+    }
 
     public void LoadStart()
     {
@@ -56,7 +119,7 @@ public class LevelManager : MonoBehaviour
         LoadScene(6);
     }
 
-        public void LoadBattle()
+        public void ToggleBattle()
     {
         if(!isInBattle)
         {
