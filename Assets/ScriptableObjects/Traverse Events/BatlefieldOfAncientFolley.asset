@@ -10,8 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f16bc66cadf80249acf836845219199, type: 3}
-  m_Name: AllsWell
+  m_Name: BatlefieldOfAncientFolley
   m_EditorClassIdentifier: 
-  eventRepeats: 1
   traverseActionsList:
-  - {fileID: 11400000, guid: 209e83b81448803408ce126601a55b12, type: 2}
+  - {fileID: 11400000, guid: 8e6d04e374a72984e84b23cff8d99146, type: 2}
+  hasLimitedRepeats: 1
+  numOfRepeats: 1
+  hasEventSpacing: 0
+  eventSpacing: 0
+  canIgnore: 1
+  canInvestigate: 1

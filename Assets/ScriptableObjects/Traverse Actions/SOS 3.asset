@@ -10,9 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67964d7fdd2627c4fb941e064aac31ca, type: 3}
-  m_Name: AllsWell
+  m_Name: SOS 3
   m_EditorClassIdentifier: 
-  titleText: All's Well
-  descriptionText: No significant events transpire.
+  titleText: S.O.S.
+  descriptionText: "You find a transport ship carrying a massive hold of immigrants
+    adrift in space. Their food supplies have run low while trying to fix their ship.
+    You decide to help them stay alive long enough to get their systems operational.
+    You gain the \u201CFellowship Twitch\u201D Assets and Misfortunes card."
   ActionRepeats: 1
-  actionImage: {fileID: 21300000, guid: 4a857433e7a9a894998dff34949a4308, type: 3}
+  actionImage: {fileID: 0}

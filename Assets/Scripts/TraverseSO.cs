@@ -10,7 +10,8 @@ public class TraverseSO : ScriptableObject
     [SerializeField] string titleText = "Traverse Title Text Here";
     [TextArea(2, 6)]
     [SerializeField] string descriptionText = "Traverse Description Text Here";
-    [SerializeField] bool doesRepeat;
+    [SerializeField] bool ActionRepeats = true;
+
     [SerializeField] Sprite actionImage;
 
     bool wasDrawn = false;
@@ -25,9 +26,9 @@ public class TraverseSO : ScriptableObject
         return descriptionText;
     }
 
-    public bool GetDoesRepeat()
+    public bool GetActionRepeats()
     {
-        return doesRepeat;
+        return ActionRepeats;
     }
 
     public Sprite GetImage()

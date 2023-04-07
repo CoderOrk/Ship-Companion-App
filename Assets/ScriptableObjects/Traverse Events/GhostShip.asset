@@ -10,8 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f16bc66cadf80249acf836845219199, type: 3}
-  m_Name: AllsWell
+  m_Name: GhostShip
   m_EditorClassIdentifier: 
-  eventRepeats: 1
   traverseActionsList:
-  - {fileID: 11400000, guid: 209e83b81448803408ce126601a55b12, type: 2}
+  - {fileID: 11400000, guid: 334a4b5b1b29116489431371830ea7e1, type: 2}
+  - {fileID: 11400000, guid: 5b35f2c071a2a3f4ca51a8cb54979359, type: 2}
+  - {fileID: 11400000, guid: 3ebaeb7a0e050484e8b1f96e656af11d, type: 2}
+  hasLimitedRepeats: 0
+  numOfRepeats: 0

@@ -15,5 +15,5 @@ MonoBehaviour:
   titleText: Dead Ship
   descriptionText: You come across the carcass of a ship that is mostly still intact.
     Do you choose to investigate the ship by sending a boarding crew?
-  doesRepeat: 1
+  ActionRepeats: 1
   actionImage: {fileID: 21300000, guid: 736101efc70acf94f8c218915bd9d617, type: 3}

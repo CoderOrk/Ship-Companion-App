@@ -15,5 +15,5 @@ MonoBehaviour:
   titleText: ' Dead Ship Inspection'
   descriptionText: Separate all of the attachment cards from the Space Station deck,
     then choose 1 at random to add to your ship.
-  doesRepeat: 1
+  ActionRepeats: 1
   actionImage: {fileID: 21300000, guid: c1217e31b1690584f9a003b93bd7efae, type: 3}

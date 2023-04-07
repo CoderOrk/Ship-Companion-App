@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f16bc66cadf80249acf836845219199, type: 3}
-  m_Name: DeadShip
+  m_Name: SOS
   m_EditorClassIdentifier: 
   traverseActionsList:
-  - {fileID: 11400000, guid: 552c543e762b7ab449ca635a1d9a373b, type: 2}
-  - {fileID: 11400000, guid: 22af8170be2ab7745b5488bb18c957d4, type: 2}
-  - {fileID: 11400000, guid: 0cdb75e74cdd73c408a243143d148317, type: 2}
-  - {fileID: 11400000, guid: dbf797c20257a7244afe8cad84d204ff, type: 2}
+  - {fileID: 11400000, guid: 5b3406d6424c6a24fa51002d82e52931, type: 2}
+  - {fileID: 11400000, guid: 578e71f1662d2b346be3b0449cd578a0, type: 2}
+  - {fileID: 11400000, guid: ff463d125d7b74e428f90fb1de4a5fb6, type: 2}
+  - {fileID: 11400000, guid: 972ef60e102d398488977db1fadd1657, type: 2}
   hasLimitedRepeats: 0
   numOfRepeats: 0
   hasEventSpacing: 0

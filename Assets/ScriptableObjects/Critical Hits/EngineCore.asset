@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-  m_ObjectHideFlags: 32
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2b9c0e026a6303e499cf535ae7626408, type: 3}
-  m_Name: Weapons Guidance
+  m_Name: EngineCore
   m_EditorClassIdentifier: 
-  title: Weapons Guidance Systems
-  description: Weapons Guidance systems were critically hit! <br> All computer guided
-    weapons are -1 to hit!
-  amountHit: 0
+  title: Engine Core
+  description: Place the "<b><color=#3249B9>Engine Core</color></b>" card on this
+    ship. If this is the <color=#ABA02C>second</color> time this location has been
+    hit on your ship, it is <color=#D43F3F>destroyed</color>!

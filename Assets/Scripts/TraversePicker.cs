@@ -27,6 +27,7 @@ public class TraversePicker : MonoBehaviour
 
     void Start()
     {
+        audioPlayer.PlayEngineRampUpSFX();
         getTraverseEvent();
         displayTraverseAction();
     }
@@ -47,17 +48,17 @@ public class TraversePicker : MonoBehaviour
             {
                 int randomIndex = Random.Range(0, traverseEventList.Count);
                 if(traverseEventList[randomIndex].GetFirstAction().GetWasDrawn() == true && 
-                    traverseEventList[randomIndex].GetFirstAction().GetDoesRepeat() == false)
+                    traverseEventList[randomIndex].HasLimitedRepeats() == true)
                 {
                     Debug.Log("Drawn: " + traverseEventList[randomIndex].GetFirstAction().GetWasDrawn().ToString());
-                    Debug.Log("Repeats: " + traverseEventList[randomIndex].GetFirstAction().GetDoesRepeat().ToString());
+                    Debug.Log("Limited Repeats: " + traverseEventList[randomIndex].HasLimitedRepeats().ToString());
                     Debug.Log(traverseEventList[randomIndex].GetFirstAction().GetTitle() + " Skipped");
 
                     break;
                 }else
                 {
                     Debug.Log("Drawn: " + traverseEventList[randomIndex].GetFirstAction().GetWasDrawn().ToString());
-                    Debug.Log("Repeats: " + traverseEventList[randomIndex].GetFirstAction().GetDoesRepeat().ToString());
+                    Debug.Log("Repeats: " + traverseEventList[randomIndex].GetFirstAction().ToString());
                     Debug.Log(traverseEventList[randomIndex].GetFirstAction().GetTitle() + " Drawn");
 
                     traverseEventList[randomIndex].GetFirstAction().SetWasDrawn(true);
@@ -72,7 +73,7 @@ public class TraversePicker : MonoBehaviour
         title.text = randomTraverseEvent.GetFirstAction().GetTitle();
         description.text = randomTraverseEvent.GetFirstAction().GetDescription();
 
-        if(randomTraverseEvent == allsWell)
+        if(randomTraverseEvent.GetFirstAction().GetImage() == null)
         {
             return;                
         }else

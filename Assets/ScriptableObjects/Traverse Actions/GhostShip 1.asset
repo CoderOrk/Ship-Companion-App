@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67964d7fdd2627c4fb941e064aac31ca, type: 3}
-  m_Name: AllsWell
+  m_Name: GhostShip 1
   m_EditorClassIdentifier: 
-  titleText: All's Well
-  descriptionText: No significant events transpire.
+  titleText: Ghost Ship
+  descriptionText: "Ghosts from the ship haunt your crew for days on end: </br>Add
+    the \u201CLow Morale\u201D Assets and Misfortunes card to your ship"
   ActionRepeats: 1
-  actionImage: {fileID: 21300000, guid: 4a857433e7a9a894998dff34949a4308, type: 3}
+  actionImage: {fileID: 0}

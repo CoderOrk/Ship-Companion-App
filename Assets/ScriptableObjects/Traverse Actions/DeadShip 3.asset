@@ -15,5 +15,5 @@ MonoBehaviour:
   titleText: Dead Ship Inspection
   descriptionText: You find a bounty of treasures in a secret chamber. Roll a D6
     and gain the roll result number of leverage tokens.
-  doesRepeat: 1
+  ActionRepeats: 1
   actionImage: {fileID: 21300000, guid: b9c96a4ecffa03c46b7d65329ee0b5cb, type: 3}

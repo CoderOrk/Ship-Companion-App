@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f16bc66cadf80249acf836845219199, type: 3}
   m_Name: BeautifuGaseousCloud
   m_EditorClassIdentifier: 
+  eventRepeats: 1
   traverseActionsList:
   - {fileID: 11400000, guid: 82b6be854bba9c74eb09b778f199f896, type: 2}

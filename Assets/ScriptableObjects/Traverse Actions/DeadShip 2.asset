@@ -15,5 +15,5 @@ MonoBehaviour:
   titleText: Dead Ship Inspection
   descriptionText: "<b>Plague:</b> Take the \u201CPlague\u201D card from the Travel
     cards and place it face up next to your ship."
-  doesRepeat: 1
+  ActionRepeats: 1
   actionImage: {fileID: 21300000, guid: 41e34dc323025364d98c5ea88c1e119a, type: 3}
