@@ -34,12 +34,12 @@ public class TraversePicker : MonoBehaviour
         audioPlayer.PlayEngineRampUpSFX();
         levelManager.IncrementEventsSinceKraken();
         levelManager.IncrementEventsSinceSpecDelivery();
-        getTraverseEvent();
+        GetTraverseEvent();
         PrintFirstTraverseAction(randomTraverseEvent);
         // levelManager.PrintResources();
     }
 
-    void getTraverseEvent()
+    void GetTraverseEvent()
     {
         int randomNum;
         randomNum = Random.Range(1, 101);

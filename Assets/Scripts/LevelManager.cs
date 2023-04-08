@@ -59,19 +59,9 @@ public class LevelManager : MonoBehaviour
         return traverseMercShips;
     }
 
-    public void DecrementTraverseMercShips()
-    {
-        traverseMercShips--;
-    }
-
     public int GetSpaceStationMercShips()
     {
         return spaceStationMercShips;
-    }
-
-    public void DecrementSpaceStationMercShips()
-    {
-        spaceStationMercShips--;
     }
 
     public void PrintResources()
@@ -90,8 +80,8 @@ public class LevelManager : MonoBehaviour
 
     public void LoadMenu()
     {
-        audioPlayer.PlayStartSFX();
         LoadScene(1);
+        audioPlayer.PlayStartSFX();
     }
 
     public void LoadOptions()

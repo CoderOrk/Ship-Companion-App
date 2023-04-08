@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class TraverseEventSO : ScriptableObject
 {
-    [Header("Events Actions")]
+    [Header("Event Actions")]
     [SerializeField] List<TraverseSO> traverseActionsList = new List<TraverseSO>();
 
     [Header("Event Repeat Settings")]
@@ -98,9 +98,9 @@ public class TraverseEventSO : ScriptableObject
             return traverseActionsList[index];
     }
 
-    // private void OnEnable()
-    // {
-    //     hideFlags = HideFlags.DontUnloadUnusedAsset;
-    // }
+    private void OnEnable()
+    {
+        hideFlags = HideFlags.DontUnloadUnusedAsset;
+    }
 
 }

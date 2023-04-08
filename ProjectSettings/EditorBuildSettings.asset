@@ -26,7 +26,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Space Station.unity
     guid: bb5e13243c5d0b441982f4eed3be27f9
-  - enabled: 1
-    path: Assets/Scenes/Battle.unity
-    guid: aca69a181faf2404ca85d0ed6c39502e
   m_configObjects: {}

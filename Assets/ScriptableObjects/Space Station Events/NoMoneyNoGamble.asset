@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 32
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95a66ab45a3ec3941aaf6e624143aa86, type: 3}
+  m_Name: NoMoneyNoGamble
+  m_EditorClassIdentifier: 
+  titleText: No Money, No Gamble
+  descriptionText: "Place as many leverage tokens as you would like to bet off to
+    the side, then gamble. Gamble: Roll a D10, then choose an opponent to roll a
+    D10. Whoever rolls the highest wins the gamble (tie goes to the opponent). If
+    you lose, your bet goes back to the box\u2019s token pool. If you win, you receive
+    as many tokens as you bet from the box\u2019s token pool and take your bet back.
+    Furthermore, if you win with a roll of 9 or 10, then you gain the \u201CTreasure
+    Map\u201D card (in addition to leverage) from the Assets and Misfortunes deck."
+  hasLimitedRepeats: 0
+  numOfRepeats: 0
+  timesDrawn: 2
+  canIgnore: 0
+  isMerc: 0
