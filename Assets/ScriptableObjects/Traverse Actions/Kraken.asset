@@ -17,5 +17,4 @@ MonoBehaviour:
     stat, then your roll is successful. If successful, you escape the clutches of
     the space beast. If the test result is a failure, then your ship is lost along
     with all attachments (place in the discard pile).
-  ActionRepeats: 1
-  actionImage: {fileID: 0}
+  actionImage: {fileID: 21300000, guid: 7355b80038366a34d97b98ecb00ead54, type: 3}
