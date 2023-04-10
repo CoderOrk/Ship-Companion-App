@@ -34,7 +34,7 @@ public class SSEventPicker : MonoBehaviour
 
     int RollDice()
     {
-        int roll = Random.Range(81, 101);
+        int roll = Random.Range(1, 101);
         Debug.Log(roll.ToString());
         return roll;
 ;
