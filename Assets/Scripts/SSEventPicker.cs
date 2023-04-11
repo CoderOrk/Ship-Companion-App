@@ -112,4 +112,12 @@ public class SSEventPicker : MonoBehaviour
         ssEvent.DecrementTimesDrawn();
         levelManager.LoadMenu();
     }
+
+    public void ResetSSEventPicker()
+    {
+        for(int i = 0; i < randomSSEvents.Count; i++)
+        {
+            randomSSEvents[i].ResetSSEvent();
+        }
+    }
 }

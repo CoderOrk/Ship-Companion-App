@@ -98,6 +98,11 @@ public class TraverseEventSO : ScriptableObject
             return traverseActionsList[index];
     }
 
+    public void ResetTraverseEvent()
+    {
+        timesDrawn = 0;
+    }
+
     private void OnEnable()
     {
         hideFlags = HideFlags.DontUnloadUnusedAsset;

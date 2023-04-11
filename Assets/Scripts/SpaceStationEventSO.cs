@@ -60,4 +60,9 @@ public class SpaceStationEventSO : ScriptableObject
     {
         return canIgnore;
     }
+
+    public void ResetSSEvent()
+    {
+        timesDrawn = 0;
+    }
 }

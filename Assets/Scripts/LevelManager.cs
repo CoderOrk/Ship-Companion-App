@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -6,15 +7,27 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
+    [Header("Layout")]
     [SerializeField] TextMeshProUGUI buttonText;
     [SerializeField] AudioPlayer audioPlayer;
     [SerializeField] AudioSource audioSource;
+
+    [Header("Objects To Reset")]
+    [SerializeField] List<TraverseEventSO> traverseEventsList= new List<TraverseEventSO>();
+    [SerializeField] List<SpaceStationEventSO>  ssEventsList = new List<SpaceStationEventSO>();
 
     public static int eventsSinceKraken = 6;
     public static int eventsSinceSpecDelivery = 6;
     public static int traverseMercShips = 2;
     public static int spaceStationMercShips = 1;
-   public static bool isInBattle = false;
+    public static bool isInBattle = false;
+
+
+    // void Awake()
+    // {
+    //     traversePicker = GetComponent<TraversePicker>();
+    //     ssEventPicker = GetComponent<SSEventPicker>();
+    // }
 
    void Start() 
    {
@@ -133,5 +146,28 @@ public class LevelManager : MonoBehaviour
     {
         Debug.Log("Quit!");
         Application.Quit();
+    }
+
+    public void ResetGameEvents()
+    {
+        ResetssEventsList();
+        ResetTraverseEventsList();
+    }
+
+    void ResetTraverseEventsList()
+    {
+        for(int i = 0; i < traverseEventsList.Count; i++)
+        {
+            traverseEventsList[i].ResetTraverseEvent();
+        }
+
+    }
+
+    void ResetssEventsList()
+    {
+        for(int i = 0; i < ssEventsList.Count; i++)
+        {
+            ssEventsList[i].ResetSSEvent();
+        }
     }
 }
